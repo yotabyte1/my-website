@@ -6,7 +6,7 @@
     <title>YotaByte</title>
     <style>
         body {
-            background-image: url('backgroundimage.webp');
+            background-image: url('backgroundimage.png');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -37,21 +37,23 @@
         }
         .header, .subheader, .contact p, .contact span {
             text-shadow: 
-                2px 2px 0 #000,  /* Bottom-right shadow */
-                -2px -2px 0 #000, /* Top-left shadow */
-                -2px 2px 0 #000,  /* Bottom-left shadow */
-                2px -2px 0 #000;  /* Top-right shadow */
+                0 0 4px #000,    /* Central glow */
+                0 0 6px #000,    /* Smooth spreading */
+                2px 2px 2px #000, /* Rounded bottom-right */
+                -2px -2px 2px #000, /* Rounded top-left */
+                2px -2px 2px #000, /* Rounded top-right */
+                -2px 2px 2px #000; /* Rounded bottom-left */
         }
         .header {
-            font-size: 2.5em;
+            font-size: 2.75em; /* 10% larger than 2.5em */
             font-weight: 700;
         }
         .subheader {
-            font-size: 1.2em;
+            font-size: 1.32em; /* 10% larger than 1.2em */
             margin: 10px 0 30px 0;
         }
         .contact {
-            font-size: 1.5em;
+            font-size: 1.65em; /* 10% larger than 1.5em */
             line-height: 1.8em;
         }
         .contact img {
@@ -72,13 +74,13 @@
                 margin: 10px 0;
             }
             .header {
-                font-size: 2em;
+                font-size: 2.2em; /* Adjust for smaller screens */
             }
             .subheader {
-                font-size: 1em;
+                font-size: 1.1em;
             }
             .contact {
-                font-size: 1.2em;
+                font-size: 1.32em;
             }
         }
     </style>
