@@ -35,6 +35,13 @@
             flex: 1;
             margin-left: 10px;
         }
+        .header, .subheader, .contact p, .contact span {
+            text-shadow: 
+                2px 2px 0 #000,  /* Bottom-right shadow */
+                -2px -2px 0 #000, /* Top-left shadow */
+                -2px 2px 0 #000,  /* Bottom-left shadow */
+                2px -2px 0 #000;  /* Top-right shadow */
+        }
         .header {
             font-size: 2.5em;
             font-weight: 700;
@@ -46,9 +53,6 @@
         .contact {
             font-size: 1.5em;
             line-height: 1.8em;
-        }
-        .contact span {
-            font-weight: 700;
         }
         .contact img {
             vertical-align: middle;
